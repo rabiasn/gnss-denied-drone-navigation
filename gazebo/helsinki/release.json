@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "tag": "gazebo-helsinki-v6",
+  "archive": "helsinki-gazebo-v6.zip",
+  "url": "https://github.com/rabiasn/gnss-denied-drone-navigation/releases/download/gazebo-helsinki-v6/helsinki-gazebo-v6.zip",
+  "sha256": "cb1d2e0983f22f1edca16c31a66e3d026eb4dd5a672a4cbaa42ff964c447d0de",
+  "bytes": 273366491,
+  "uncompressed_bytes": 616635300,
+  "models": 3078,
+  "saved_scene_and_lights_preserved": true
+}

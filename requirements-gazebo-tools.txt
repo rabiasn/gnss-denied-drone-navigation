@@ -1,0 +1,3 @@
+# Only the mesh processing code and its tests need this dependency.
+# Opening the world and downloading the package use the Python standard library.
+numpy==2.2.6

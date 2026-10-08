@@ -1,0 +1,4 @@
+City of Helsinki, Helsinki 3D Mesh 2017, CC BY 4.0
+https://www.hel.fi/en/decision-making/information-on-helsinki/maps-and-geospatial-data/helsinki-3d
+https://creativecommons.org/licenses/by/4.0/
+Changes: Real source LOD20/21, UV-preserving common-frame clipping and crease normals; saved scene/lights and sensor rig preserved; locally matched seam welding/T-junction splits; no hole caps passed the safety gates; ambiguous boundary loops preserved
