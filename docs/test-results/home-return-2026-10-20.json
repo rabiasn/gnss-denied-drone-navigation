@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "scope": "GPS-enabled Gazebo/ArduPilot SITL regression; not GNSS-denied return or real-flight accuracy",
+  "scenario": "Land away from original H, take off again in the same session, wait for timeout, return to the original H and land",
+  "passed": true,
+  "checks": {
+    "scenario_completed": true,
+    "two_flights": true,
+    "same_original_home": true,
+    "first_landing_away": true,
+    "second_takeoff_still_away": true,
+    "timeout_caused_return": true,
+    "second_landed_at_original_home": true,
+    "no_errors": true,
+    "children_reaped": true
+  },
+  "flight_records": [
+    {
+      "home_ned_m": [
+        -109.99414825439453,
+        119.99688720703125,
+        -2.799999952316284
+      ],
+      "takeoff_offset_north_east_m": [
+        0,
+        0
+      ],
+      "return_reason": null,
+      "landing_reason": "manual_land",
+      "home_error_at_landing_m": 6.122535706783317
+    },
+    {
+      "home_ned_m": [
+        -109.99414825439453,
+        119.99688720703125,
+        -2.799999952316284
+      ],
+      "takeoff_offset_north_east_m": [
+        6.122535705566406,
+        -0.0001220703125
+      ],
+      "return_reason": "uçuş süresi doldu",
+      "landing_reason": "home_return",
+      "home_error_at_landing_m": 0.01113128662109375
+    }
+  ],
+  "distance_measurement_source": "ArduPilot LOCAL_POSITION_NED telemetry; not an independent real-world measurement",
+  "elapsed_wall_s": 183.0655880419945,
+  "flight_timeout_s": 45,
+  "normal_launcher_timeout_s": 180,
+  "unit_tests": {
+    "count": 55,
+    "failed": 0,
+    "skipped": 0,
+    "python": "3.10.18",
+    "upstream_Iris_assets_present": true
+  },
+  "reproduce": "python3 scripts/check_home_return.py",
+  "source_run_id": "20261020T141209Z_5812340a",
+  "note": "Raw process logs, private absolute paths, binaries and sensor datasets are not included in this summary."
+}

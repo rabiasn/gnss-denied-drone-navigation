@@ -1,0 +1,8 @@
+# Flight launcher: Python 3.10; Gazebo Python bindings use a separate environment.
+numpy==2.2.6
+pymavlink==2.4.49
+# Tests and the pinned ArduPilot source build:
+Pillow>=10,<12
+empy==3.3.4
+pexpect==4.9.0
+future==1.0.0

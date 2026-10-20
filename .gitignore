@@ -3,11 +3,14 @@ __pycache__/
 *.py[cod]
 .venv/
 .venv_*/
+.venv-gz/
 venv/
 .env
 .env.*
 !.env.example
 build/
+vendor/
+artifacts/
 install/
 log/
 results/
